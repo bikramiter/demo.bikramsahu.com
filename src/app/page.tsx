@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const industries = [
   {
-    name: "House Cleaning",
+    name: "Home Cleaning",
     image: "/images/cleaning.jpg",
     description:
       "Automate client bookings, quote requests, and post-service follow-ups.",
@@ -67,8 +67,12 @@ export default function HomePage() {
                 <p className="text-gray-600 text-sm mb-4">
                   {industry.description}
                 </p>
-                <Button className="w-full" variant="default">
-                  View Demo
+                <Button className="w-full" variant="default" asChild>
+                  {industry.name === "Home Cleaning" ? (
+                    <a href="/home-cleaning">View Demo</a>
+                  ) : (
+                    <span>View Demo</span>
+                  )}
                 </Button>
               </CardContent>
             </Card>
