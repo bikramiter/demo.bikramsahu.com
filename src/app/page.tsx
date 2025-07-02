@@ -287,9 +287,8 @@ export default function HomePage() {
               Start Free Trial
             </Button>
             <Button
-              variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg rounded-xl transition-all duration-300"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Schedule Demo
             </Button>
